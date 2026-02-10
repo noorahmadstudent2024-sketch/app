@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio - Projects by Noor Ahmad Siddique">
+    <title>Portfolio | Noor Ahmad Siddique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Noor Ahmad</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <canvas id="bgCanvas"></canvas>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Portfolio</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Showcasing my recent projects and work</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ai">AI Projects</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/0A192F/00D9FF?text=Business+Landing+Page" alt="Business Landing Page">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Business Landing Page</h3>
+                                <p>A modern landing page for a digital marketing agency with smooth animations and responsive design.</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Business Landing Page</h3>
+                        <div class="tech-badges">
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/0A192F/8B5CF6?text=Portfolio+Template" alt="Portfolio Website Template">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Portfolio Website Template</h3>
+                                <p>A clean and professional portfolio template for creative professionals and freelancers.</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Portfolio Website Template</h3>
+                        <div class="tech-badges">
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/0A192F/00D9FF?text=Restaurant+Menu" alt="Restaurant Menu Website">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Restaurant Menu Website</h3>
+                                <p>An elegant restaurant website featuring interactive menu, online ordering, and reservation system.</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Restaurant Menu Website</h3>
+                        <div class="tech-badges">
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="portfolio-card" data-category="ai">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/0A192F/8B5CF6?text=AI+Chatbot" alt="AI Chatbot Interface">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>AI Chatbot Interface</h3>
+                                <p>An intelligent chatbot interface powered by AI for customer support and interaction.</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>AI Chatbot Interface</h3>
+                        <div class="tech-badges">
+                            <span class="badge">Python</span>
+                            <span class="badge">AI/ML</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/0A192F/00D9FF?text=E-Commerce+Store" alt="E-commerce Store">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>E-commerce Store</h3>
+                                <p>A fully functional online store with product catalog, shopping cart, and checkout system.</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>E-commerce Store</h3>
+                        <div class="tech-badges">
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="portfolio-card" data-category="ai">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/0A192F/8B5CF6?text=AI+Image+Generator" alt="AI Image Generator">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>AI Image Generator</h3>
+                                <p>An AI-powered tool that generates unique images based on text descriptions using machine learning.</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>AI Image Generator</h3>
+                        <div class="tech-badges">
+                            <span class="badge">Python</span>
+                            <span class="badge">AI/ML</span>
+                            <span class="badge">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/0A192F/00D9FF?text=Corporate+Website" alt="Corporate Website">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Corporate Website</h3>
+                                <p>A professional corporate website with company information, services, and contact forms.</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Corporate Website</h3>
+                        <div class="tech-badges">
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="portfolio-card" data-category="ai">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/0A192F/8B5CF6?text=Smart+Assistant" alt="Smart Assistant">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>AI Smart Assistant</h3>
+                                <p>A voice-activated smart assistant that can perform various tasks using natural language processing.</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>AI Smart Assistant</h3>
+                        <div class="tech-badges">
+                            <span class="badge">Python</span>
+                            <span class="badge">NLP</span>
+                            <span class="badge">AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="portfolio-card" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="https://via.placeholder.com/600x400/0A192F/00D9FF?text=Blog+Platform" alt="Blog Platform">
+                        <div class="portfolio-overlay">
+                            <div class="overlay-content">
+                                <h3>Blog Platform</h3>
+                                <p>A modern blogging platform with article management, comments, and social sharing features.</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i> View Demo</a>
+                                    <a href="#" class="portfolio-link"><i class="fab fa-github"></i> GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Blog Platform</h3>
+                        <div class="tech-badges">
+                            <span class="badge">HTML</span>
+                            <span class="badge">CSS</span>
+                            <span class="badge">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://wa.me/923478302597" target="_blank" class="social-icon" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=noorahmad7316125@gmail.com" target="_blank" class="social-icon" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/noorahmadstudent2024-sketch" target="_blank" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/noor-ahmad-7b527b343/" target="_blank" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Noor Ahmad Siddique. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

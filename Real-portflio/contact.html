@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Noor Ahmad Siddique - Get in touch for your next project">
+    <title>Contact | Noor Ahmad Siddique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">Noor Ahmad</a>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <canvas id="bgCanvas"></canvas>
+    </div>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero section-padding">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="hero-heading">Let's Work Together</h1>
+                <p class="hero-subheading">Get in touch for your next project</p>
+                <div class="availability-badge">
+                    <span class="status-dot"></span>
+                    Available for Freelance Projects
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Me a Message</h2>
+                    <p class="form-subtitle">Fill out the form below and I'll get back to you within 24 hours</p>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="custom-website">Custom Website Design & Development</option>
+                                <option value="responsive-app">Responsive Web Application</option>
+                                <option value="landing-page">Landing Page</option>
+                                <option value="portfolio">Portfolio Website</option>
+                                <option value="ecommerce">E-commerce Solution</option>
+                                <option value="redesign">Website Redesign & Optimization</option>
+                                <option value="ai-project">AI/ML Project</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="serviceError"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" required placeholder="Tell me about your project..." rows="6"></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <div id="formSuccess" class="success-message" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Thank you! Your message has been sent successfully. I'll get back to you soon.</p>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-container">
+                    <h2>Get in Touch</h2>
+                    <p class="info-subtitle">Feel free to reach out through any of these channels</p>
+
+                    <div class="contact-info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=noorahmad7316125@gmail.com&su=Project Inquiry from Portfolio&body=Hi Noor Ahmad,%0D%0A%0D%0AI am interested in your services." target="_blank">noorahmad7316125@gmail.com</a>
+                                <p style="font-size: 0.85rem; margin-top: 5px; color: #8892B0;">(Click to open Gmail)</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/923478302597" target="_blank">+92 347 8302597</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/noorahmadstudent2024-sketch" target="_blank">noorahmadstudent2024-sketch</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/noor-ahmad-7b527b343/" target="_blank">Noor Ahmad</a>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Location</h4>
+                                <p>Sector 5-D, New Karachi<br>Karachi, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Connect With Me</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="social-contact-grid">
+                <a href="https://wa.me/923478302597?text=Hi! I want to discuss a project" target="_blank" class="social-contact-card whatsapp">
+                    <div class="social-contact-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>Message on WhatsApp</h3>
+                    <p>Quick response for project inquiries</p>
+                </a>
+
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=noorahmad7316125@gmail.com&su=Project Inquiry&body=Hi Noor Ahmad,%0D%0A%0D%0AI am interested in your services." target="_blank" class="social-contact-card email">
+                    <div class="social-contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Send an Email</h3>
+                    <p>For detailed project proposals</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/noor-ahmad-7b527b343/" target="_blank" class="social-contact-card linkedin">
+                    <div class="social-contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <h3>Connect on LinkedIn</h3>
+                    <p>Professional networking</p>
+                </a>
+
+                <a href="https://github.com/noorahmadstudent2024-sketch" target="_blank" class="social-contact-card github">
+                    <div class="social-contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>View GitHub Profile</h3>
+                    <p>Check out my code repositories</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="https://wa.me/923478302597" target="_blank" class="social-icon" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=noorahmad7316125@gmail.com" target="_blank" class="social-icon" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/noorahmadstudent2024-sketch" target="_blank" class="social-icon" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/noor-ahmad-7b527b343/" target="_blank" class="social-icon" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Noor Ahmad Siddique. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

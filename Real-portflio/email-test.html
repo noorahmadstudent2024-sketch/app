@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Link Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            background: #0A192F;
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(17, 34, 64, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 217, 255, 0.2);
+        }
+        h1 {
+            color: #00D9FF;
+            margin-bottom: 30px;
+        }
+        .solution {
+            background: rgba(0, 217, 255, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            border: 1px solid #00D9FF;
+        }
+        .solution h2 {
+            color: #00D9FF;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        .email-box {
+            background: #112240;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            color: #00D9FF;
+            margin: 15px 0;
+            text-align: center;
+            user-select: all;
+            cursor: pointer;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #00D9FF, #8B5CF6);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            margin: 10px 5px;
+            transition: transform 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+        .note {
+            background: rgba(139, 92, 246, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #8B5CF6;
+        }
+        .copy-btn {
+            background: #00D9FF;
+            color: #0A192F;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .copy-btn:hover {
+            background: #8B5CF6;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📧 Email Contact Solutions</h1>
+
+        <div class="solution">
+            <h2>✅ Solution 1: Copy Email Address (EASIEST)</h2>
+            <p>Is email address ko copy karo aur Gmail/Outlook pe manually paste karo:</p>
+            <div class="email-box" onclick="copyEmail()" id="emailBox">
+                noorahmad7316125@gmail.com
+            </div>
+            <button class="copy-btn" onclick="copyEmail()">📋 Copy Email Address</button>
+            <p id="copyStatus" style="color: #4ade80; margin-top: 10px;"></p>
+        </div>
+
+        <div class="solution">
+            <h2>✅ Solution 2: WhatsApp (RECOMMENDED)</h2>
+            <p>Sabse fast aur reliable! Direct WhatsApp pe message bhejo:</p>
+            <a href="https://wa.me/923478302597?text=Hi! I want to discuss a project" class="btn" target="_blank">
+                📱 Open WhatsApp
+            </a>
+        </div>
+
+        <div class="solution">
+            <h2>✅ Solution 3: Gmail Direct Link</h2>
+            <p>Gmail browser mein open hoga with pre-filled email:</p>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=noorahmad7316125@gmail.com&su=Project Inquiry from Portfolio&body=Hi Noor Ahmad,%0D%0A%0D%0AI am interested in your services."
+               class="btn" target="_blank">
+                ✉️ Open Gmail
+            </a>
+        </div>
+
+        <div class="note">
+            <strong>⚠️ Why Email Link Not Working?</strong>
+            <p>Aapke computer pe default email client (Outlook/Thunderbird) install ya configure nahi hai. Upar diye gaye solutions use karein.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="index.html" class="btn">🏠 Back to Home</a>
+            <a href="contact.html" class="btn">📞 Contact Page</a>
+        </div>
+    </div>
+
+    <script>
+        function copyEmail() {
+            const email = 'noorahmad7316125@gmail.com';
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(email).then(function() {
+                document.getElementById('copyStatus').textContent = '✅ Email copied! Ab Gmail/Outlook pe paste karo';
+
+                // Clear message after 3 seconds
+                setTimeout(function() {
+                    document.getElementById('copyStatus').textContent = '';
+                }, 3000);
+            }).catch(function(err) {
+                // Fallback method
+                const textArea = document.createElement('textarea');
+                textArea.value = email;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textArea);
+
+                document.getElementById('copyStatus').textContent = '✅ Email copied! Ab Gmail/Outlook pe paste karo';
+
+                setTimeout(function() {
+                    document.getElementById('copyStatus').textContent = '';
+                }, 3000);
+            });
+        }
+    </script>
+</body>
+</html>
